@@ -14,7 +14,7 @@ jobs:
         with:
           node-version: 18
           cache-dependency-path: sample-packages/npm/package.json
-      - run: npm ci
+      - run: npm install
       - run: npm test
 
   publish-gpr:
