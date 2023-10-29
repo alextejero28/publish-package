@@ -13,6 +13,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
+          cache: 'npm@5'
           cache-dependency-path: sample-packages/npm/package.json
       - run: npm ci
       - run: npm test
